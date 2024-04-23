@@ -10,7 +10,7 @@ function Counter() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-2 border border-black p-4">
+    <div className="flex flex-col items-center gap-2 p-4">
       <p className="text-2xl font-bold">{counter}</p>
 
       <div className="flex gap-4">

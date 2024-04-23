@@ -1,12 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
-    <div>
-      <nav>
-        <NavLink to={"/counter"}>Counter</NavLink>
-      </nav>
-    </div>
+    <nav className="p-4">
+      <div
+        className="flex aspect-square h-32 cursor-pointer items-center justify-center rounded-lg border border-black p-4 text-xl font-semibold"
+        onClick={() => navigate("/counter")}
+      >
+        Counter
+      </div>
+    </nav>
   );
 }
 
