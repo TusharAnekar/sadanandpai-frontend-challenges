@@ -51,6 +51,8 @@ function QuoteGenerator() {
 
   return (
     <div className="flex flex-col items-center justify-center gap-4 p-4 text-center">
+      <h2 className="text-3xl font-bold">Quote Generator</h2>
+
       <div>
         <p className="text-xl font-semibold">{quote.content}</p>
         <p className="text-center text-lg underline underline-offset-4">
