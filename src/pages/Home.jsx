@@ -4,7 +4,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <nav className="grid grid-cols-4 p-4">
+    <nav className="grid grid-cols-4 gap-4 p-4">
       <div
         className="flex aspect-square h-32 cursor-pointer items-center justify-center rounded-lg border border-black p-4 text-xl font-semibold"
         onClick={() => navigate("/counter")}
@@ -28,6 +28,12 @@ function Home() {
         onClick={() => navigate("/image-gallery")}
       >
         Image Gallery
+      </div>
+      <div
+        className="flex aspect-square h-32 cursor-pointer items-center justify-center rounded-lg border border-black p-4 text-xl font-semibold"
+        onClick={() => navigate("/accordion")}
+      >
+        Accordion
       </div>
     </nav>
   );
