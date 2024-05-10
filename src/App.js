@@ -8,6 +8,7 @@ import { AnagramChecker } from "./pages/AnagramChecker";
 import { QuoteGenerator } from "./pages/QuoteGenerator";
 import { ImageGallery } from "./pages/ImageGallery";
 import { Accordion } from "./pages/Accordion";
+import { GuessTheNumber } from "./pages/GuessTheNumber";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/quote-generator" element={<QuoteGenerator />}></Route>
         <Route path="/image-gallery" element={<ImageGallery />}></Route>
         <Route path="/accordion" element={<Accordion />}></Route>
+        <Route path="/guess-the-number" element={<GuessTheNumber />}></Route>
       </Routes>
     </div>
   );
